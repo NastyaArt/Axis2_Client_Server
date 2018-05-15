@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.EquipmentEdit"
+          alignment="center" hgap="5" vgap="5">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <VBox spacing="5">
+        <TitledPane collapsible="false" text="Add Equipment">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeAdd" text="11"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Category:"/>
+                    <TextField fx:id="categoryAdd" text="Категория №2" />
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Name:"/>
+                    <TextField fx:id="nameAdd" text="Техника №3"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Cost"/>
+                    <TextField fx:id="costAdd" text="1470"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Producer:"/>
+                    <TextField fx:id="producerAdd" text="Производитель №4"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Receipt Date:"/>
+                    <TextField fx:id="receiptDateAdd" text="2018-03-01"/>
+                </HBox>
+                <Button text="Add" fx:id="btnAdd" onAction="#Add"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Delete Equipment">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeDel" text="11"/>
+                </HBox>
+                <Button text="Delete" fx:id="btnDel" onAction="#Delete"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Edit Equipment">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeEdit" text="11"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Category:"/>
+                    <TextField fx:id="categoryEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Name:"/>
+                    <TextField fx:id="nameEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Cost:"/>
+                    <TextField fx:id="costEdit"  text="999"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Producer:"/>
+                    <TextField fx:id="producerEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Receipt Date:"/>
+                    <TextField fx:id="receiptDateEdit"/>
+                </HBox>
+                <Button text="Edit" fx:id="btnEdit" onAction="#Edit"/>
+            </VBox>
+        </TitledPane>
+    </VBox>
+</GridPane>

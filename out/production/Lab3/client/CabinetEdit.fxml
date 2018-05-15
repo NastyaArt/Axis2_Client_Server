@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.CabinetEdit"
+          alignment="center" hgap="5" vgap="5">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <VBox spacing="5">
+        <TitledPane collapsible="false" text="Add Cabinet">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeAdd" text="111"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Name:"/>
+                    <TextField fx:id="nameAdd" text="Кабинет №111"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Code Responsible:"/>
+                    <TextField fx:id="codeResponsibleAdd" text="11" />
+                </HBox>
+                <Button text="Add" fx:id="btnAdd" onAction="#Add"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Delete Cabinet">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeDel" text="111"/>
+                </HBox>
+                <Button text="Delete" fx:id="btnDel" onAction="#Delete"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Edit Cabinet">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeEdit" text="111"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Name:"/>
+                    <TextField fx:id="nameEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Code Responsible:"/>
+                    <TextField fx:id="codeResponsibleEdit" text="19"/>
+                </HBox>
+                <Button text="Edit" fx:id="btnEdit" onAction="#Edit"/>
+            </VBox>
+        </TitledPane>
+    </VBox>
+</GridPane>

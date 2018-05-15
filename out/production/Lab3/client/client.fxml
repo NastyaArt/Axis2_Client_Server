@@ -1,0 +1,174 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+
+<GridPane fx:controller="client.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <HBox spacing="10">
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Equipment">
+                <TableView fx:id="tableEquipment" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn text="Code">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="code"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Category">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="category"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="name"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Cost">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="cost"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Producer">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="producer"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Receipt Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="receiptDate"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+            <Tab text="Cabinet">
+                <TableView fx:id="tableCabinet" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn text="Code">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="code"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="name"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Code Responsible">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="codeResponsible"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+            <Tab text="Responsible">
+                <TableView fx:id="tableResponsible" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn text="Code">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="code"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="FIO">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fio"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Phone">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="phone"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+            <Tab text="Distribution">
+                <TableView fx:id="tableDistribution" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn text="Code">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="code"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Code Cabinet">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="codeCabinet"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Code Equipment">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="codeEquipment"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="number"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="date"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+            <Tab text="Writeoff">
+                <TableView fx:id="tableWriteoff" GridPane.columnIndex="0"
+                           GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn text="Code">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="code"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Code Cabinet">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="codeCabinet"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Code Equipment">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="codeEquipment"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="number"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="date"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Cause">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="cause"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+        </TabPane>
+        <TitledPane collapsible="false" text="Add / Delete / Edit">
+            <VBox spacing="10">
+                <Button fx:id="btnEquipment" text="Equipment" onAction="#EditEquipment"/>
+                <Button fx:id="btnCabinet" text="Cabinet" onAction="#EditCabinet"/>
+                <Button fx:id="btnResponsible" text="Responsible" onAction="#EditResponsible"/>
+                <Button fx:id="btnDistribution" text="Distribution" onAction="#EditDistribution"/>
+                <Button fx:id="btnWriteoff" text="Writeoff" onAction="#EditWriteoff"/>
+            </VBox>
+        </TitledPane>
+    </HBox>
+</GridPane>

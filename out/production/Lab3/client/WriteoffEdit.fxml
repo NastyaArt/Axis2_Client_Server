@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.WriteoffEdit"
+          alignment="center" hgap="5" vgap="5">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <VBox spacing="5">
+        <TitledPane collapsible="false" text="Add Writeoff">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeAdd" text="6"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Code Cabinet:"/>
+                    <TextField fx:id="codeCabinetAdd" text="101"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Code Equipment:"/>
+                    <TextField fx:id="codeEquipmentAdd" text="6"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Number"/>
+                    <TextField fx:id="numberAdd" text="1"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Date:"/>
+                    <TextField fx:id="dateAdd" text="2018-03-01"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Cause:"/>
+                    <TextField fx:id="causeAdd" text="Неисправность"/>
+                </HBox>
+                <Button text="Add" fx:id="btnAdd" onAction="#Add"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Delete Writeoff">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeDel" text="6"/>
+                </HBox>
+                <Button text="Delete" fx:id="btnDel" onAction="#Delete"/>
+            </VBox>
+        </TitledPane>
+        <TitledPane collapsible="false" text="Edit Writeoff">
+            <VBox spacing="5">
+                <HBox spacing="5">
+                    <Label text="Code:"/>
+                    <TextField fx:id="codeEdit" text="6"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Code Cabinet:"/>
+                    <TextField fx:id="codeCabinetEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Code Equipment:"/>
+                    <TextField fx:id="codeEquipmentEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Number"/>
+                    <TextField fx:id="numberEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Date:"/>
+                    <TextField fx:id="dateEdit"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Label text="Cause:"/>
+                    <TextField fx:id="causeEdit"  text="Поломка"/>
+                </HBox>
+                <Button text="Edit" fx:id="btnEdit" onAction="#Edit"/>
+            </VBox>
+        </TitledPane>
+    </VBox>
+</GridPane>
