@@ -8,7 +8,16 @@ public class Equipment {
     private int cost;
     private String producer;
     private String receiptDate;
-    
+
+    public Equipment(int code, String category, String name, int cost, String producer, String receiptDate) {
+        this.code = code;
+        this.category = category;
+        this.name = name;
+        this.cost = cost;
+        this.producer = producer;
+        this.receiptDate = receiptDate;
+    }
+
     public int getCode() {
         return code;
     }

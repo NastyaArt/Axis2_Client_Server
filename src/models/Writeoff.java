@@ -9,6 +9,15 @@ public class Writeoff {
     private String date;
     private String cause;
 
+    public Writeoff(int code, int codeCabinet, int codeEquipment, int number, String date, String cause) {
+        this.code = code;
+        this.codeCabinet = codeCabinet;
+        this.codeEquipment = codeEquipment;
+        this.number = number;
+        this.date = date;
+        this.cause = cause;
+    }
+
     public int getCode() {
         return code;
     }

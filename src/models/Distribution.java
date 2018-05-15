@@ -8,6 +8,14 @@ public class Distribution {
     private int number;
     private String date;
 
+    public Distribution(int code, int codeCabinet, int codeEquipment, int number, String date) {
+        this.code = code;
+        this.codeCabinet = codeCabinet;
+        this.codeEquipment = codeEquipment;
+        this.number = number;
+        this.date = date;
+    }
+
     public int getCode() {
         return code;
     }

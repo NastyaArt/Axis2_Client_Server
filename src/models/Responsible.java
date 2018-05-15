@@ -6,6 +6,12 @@ public class Responsible {
     private String fio;
     private String phone;
 
+    public Responsible(int code, String fio, String phone) {
+        this.code = code;
+        this.fio = fio;
+        this.phone = phone;
+    }
+
     public int getCode() {
         return code;
     }
