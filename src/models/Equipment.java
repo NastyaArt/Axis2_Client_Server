@@ -8,8 +8,7 @@ public class Equipment {
     private int cost;
     private String producer;
     private String receiptDate;
-
-    public int getCode() {
+    
     public int getCode() {
         return code;
     }
