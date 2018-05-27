@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://ws.apache.org/axis2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ax21="http://models/xsd" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" targetNamespace="http://ws.apache.org/axis2">
+    <wsdl:types>
+        <xs:schema xmlns:ax22="http://models/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.apache.org/axis2">
+            <xs:import namespace="http://models/xsd"/>
+            <xs:element name="getWriteoff">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getWriteoffResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Writeoff"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getResponsible">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getResponsibleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Responsible"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMySpechialCode">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMySpechialCodeResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getEquipment">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getEquipmentResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Equipment"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDistribution">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getDistributionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Distribution"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCabinet">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCabinetResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Cabinet"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://models/xsd">
+            <xs:complexType name="Writeoff">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="cause" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="code" type="xs:int"/>
+                    <xs:element minOccurs="0" name="codeCabinet" type="xs:int"/>
+                    <xs:element minOccurs="0" name="codeEquipment" type="xs:int"/>
+                    <xs:element minOccurs="0" name="date" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="number" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Responsible">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code" type="xs:int"/>
+                    <xs:element minOccurs="0" name="fio" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Equipment">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="category" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="code" type="xs:int"/>
+                    <xs:element minOccurs="0" name="cost" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="producer" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="receiptDate" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Distribution">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code" type="xs:int"/>
+                    <xs:element minOccurs="0" name="codeCabinet" type="xs:int"/>
+                    <xs:element minOccurs="0" name="codeEquipment" type="xs:int"/>
+                    <xs:element minOccurs="0" name="date" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="number" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Cabinet">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code" type="xs:int"/>
+                    <xs:element minOccurs="0" name="codeResponsible" type="xs:int"/>
+                    <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getDistributionRequest">
+        <wsdl:part name="parameters" element="ns:getDistribution"/>
+    </wsdl:message>
+    <wsdl:message name="getDistributionResponse">
+        <wsdl:part name="parameters" element="ns:getDistributionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getCabinetRequest">
+        <wsdl:part name="parameters" element="ns:getCabinet"/>
+    </wsdl:message>
+    <wsdl:message name="getCabinetResponse">
+        <wsdl:part name="parameters" element="ns:getCabinetResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getResponsibleRequest">
+        <wsdl:part name="parameters" element="ns:getResponsible"/>
+    </wsdl:message>
+    <wsdl:message name="getResponsibleResponse">
+        <wsdl:part name="parameters" element="ns:getResponsibleResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getMySpechialCodeRequest">
+        <wsdl:part name="parameters" element="ns:getMySpechialCode"/>
+    </wsdl:message>
+    <wsdl:message name="getMySpechialCodeResponse">
+        <wsdl:part name="parameters" element="ns:getMySpechialCodeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getWriteoffRequest">
+        <wsdl:part name="parameters" element="ns:getWriteoff"/>
+    </wsdl:message>
+    <wsdl:message name="getWriteoffResponse">
+        <wsdl:part name="parameters" element="ns:getWriteoffResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getEquipmentRequest">
+        <wsdl:part name="parameters" element="ns:getEquipment"/>
+    </wsdl:message>
+    <wsdl:message name="getEquipmentResponse">
+        <wsdl:part name="parameters" element="ns:getEquipmentResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="MySQLServiceEquipmentPortType">
+        <wsdl:operation name="getDistribution">
+            <wsdl:input message="ns:getDistributionRequest" wsaw:Action="urn:getDistribution"/>
+            <wsdl:output message="ns:getDistributionResponse" wsaw:Action="urn:getDistributionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <wsdl:input message="ns:getCabinetRequest" wsaw:Action="urn:getCabinet"/>
+            <wsdl:output message="ns:getCabinetResponse" wsaw:Action="urn:getCabinetResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <wsdl:input message="ns:getResponsibleRequest" wsaw:Action="urn:getResponsible"/>
+            <wsdl:output message="ns:getResponsibleResponse" wsaw:Action="urn:getResponsibleResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <wsdl:input message="ns:getMySpechialCodeRequest" wsaw:Action="urn:getMySpechialCode"/>
+            <wsdl:output message="ns:getMySpechialCodeResponse" wsaw:Action="urn:getMySpechialCodeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWriteoff">
+            <wsdl:input message="ns:getWriteoffRequest" wsaw:Action="urn:getWriteoff"/>
+            <wsdl:output message="ns:getWriteoffResponse" wsaw:Action="urn:getWriteoffResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getEquipment">
+            <wsdl:input message="ns:getEquipmentRequest" wsaw:Action="urn:getEquipment"/>
+            <wsdl:output message="ns:getEquipmentResponse" wsaw:Action="urn:getEquipmentResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="MySQLServiceEquipmentSoap11Binding" type="ns:MySQLServiceEquipmentPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="getDistribution">
+            <soap:operation soapAction="urn:getDistribution" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <soap:operation soapAction="urn:getCabinet" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <soap:operation soapAction="urn:getResponsible" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <soap:operation soapAction="urn:getMySpechialCode" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getWriteoff">
+            <soap:operation soapAction="urn:getWriteoff" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getEquipment">
+            <soap:operation soapAction="urn:getEquipment" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="MySQLServiceEquipmentSoap12Binding" type="ns:MySQLServiceEquipmentPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="getDistribution">
+            <soap12:operation soapAction="urn:getDistribution" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <soap12:operation soapAction="urn:getCabinet" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <soap12:operation soapAction="urn:getResponsible" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <soap12:operation soapAction="urn:getMySpechialCode" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getWriteoff">
+            <soap12:operation soapAction="urn:getWriteoff" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getEquipment">
+            <soap12:operation soapAction="urn:getEquipment" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="MySQLServiceEquipmentHttpBinding" type="ns:MySQLServiceEquipmentPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="getDistribution">
+            <http:operation location="getDistribution"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <http:operation location="getCabinet"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <http:operation location="getResponsible"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <http:operation location="getMySpechialCode"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getWriteoff">
+            <http:operation location="getWriteoff"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getEquipment">
+            <http:operation location="getEquipment"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="MySQLServiceEquipment">
+        <wsdl:port name="MySQLServiceEquipmentHttpSoap11Endpoint" binding="ns:MySQLServiceEquipmentSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/MySQLServiceEquipment"/>
+        </wsdl:port>
+        <wsdl:port name="MySQLServiceEquipmentHttpSoap12Endpoint" binding="ns:MySQLServiceEquipmentSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/MySQLServiceEquipment"/>
+        </wsdl:port>
+        <wsdl:port name="MySQLServiceEquipmentHttpEndpoint" binding="ns:MySQLServiceEquipmentHttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/MySQLServiceEquipment"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

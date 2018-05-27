@@ -7,6 +7,55 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/databinding/client/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/databinding/service/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/faulthandling/client/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/faulthandling/service/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/java_first_jaxws/src/main" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-addressbook/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-calculator/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-dynamic/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-interop/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-samples/src/main" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/jaxws-version/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/json/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/mtom/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/pojo/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/pojoguide/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/pojoguidespring/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/quickstart/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/quickstartadb/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/quickstartaxiom/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/quickstartjibx/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/quickstartxmlbeans/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/servicelifecycle/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/soapwithattachments/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/transport/https-sample/httpsClient/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/transport/https-sample/httpsService/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/transport/jms-sample/jmsService/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/userguide/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/version/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/yahoojsonsearch/src" />
+          <root url="file://$MODULE_DIR$/../../Programs/Axis2/axis2-1.7.7/samples/yahoorestsearch/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Programs/Apache Thrift/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-5.1.46" level="project" />
   </component>
 </module>
