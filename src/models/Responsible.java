@@ -6,6 +6,9 @@ public class Responsible {
     private String fio;
     private String phone;
 
+    public Responsible(){
+
+    }
     public Responsible(int code, String fio, String phone) {
         this.code = code;
         this.fio = fio;

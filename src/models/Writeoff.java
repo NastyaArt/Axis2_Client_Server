@@ -9,6 +9,10 @@ public class Writeoff {
     private String date;
     private String cause;
 
+    public Writeoff(){
+
+    }
+
     public Writeoff(int code, int codeCabinet, int codeEquipment, int number, String date, String cause) {
         this.code = code;
         this.codeCabinet = codeCabinet;

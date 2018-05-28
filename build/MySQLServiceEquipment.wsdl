@@ -77,6 +77,174 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="editWriteoff">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="writeoff" nillable="true" type="ax22:Writeoff"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editWriteoffResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editResponsible">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="responsible" nillable="true" type="ax22:Responsible"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editResponsibleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editEquipment">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="equipment" nillable="true" type="ax22:Equipment"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editEquipmentResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editDistribution">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="distribution" nillable="true" type="ax22:Distribution"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editDistributionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editCabinet">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="cabinet" nillable="true" type="ax22:Cabinet"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="editCabinetResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delWriteoff">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delWriteoffResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delResponsible">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delResponsibleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delEquipment">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delEquipmentResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delDistribution">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delDistributionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delCabinet">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="delCabinetResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addWriteoff">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="writeoff" nillable="true" type="ax22:Writeoff"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addWriteoffResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addResponsible">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="responsible" nillable="true" type="ax22:Responsible"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addResponsibleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="addEquipment">
                 <xs:complexType>
                     <xs:sequence>
@@ -85,6 +253,34 @@
                 </xs:complexType>
             </xs:element>
             <xs:element name="addEquipmentResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addDistribution">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="distribution" nillable="true" type="ax22:Distribution"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addDistributionResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addCabinet">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="cabinet" nillable="true" type="ax22:Cabinet"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addCabinetResponse">
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
@@ -144,11 +340,29 @@
     <wsdl:message name="getDistributionResponse">
         <wsdl:part name="parameters" element="ns:getDistributionResponse"/>
     </wsdl:message>
-    <wsdl:message name="getCabinetRequest">
-        <wsdl:part name="parameters" element="ns:getCabinet"/>
+    <wsdl:message name="editEquipmentRequest">
+        <wsdl:part name="parameters" element="ns:editEquipment"/>
     </wsdl:message>
-    <wsdl:message name="getCabinetResponse">
-        <wsdl:part name="parameters" element="ns:getCabinetResponse"/>
+    <wsdl:message name="editEquipmentResponse">
+        <wsdl:part name="parameters" element="ns:editEquipmentResponse"/>
+    </wsdl:message>
+    <wsdl:message name="delWriteoffRequest">
+        <wsdl:part name="parameters" element="ns:delWriteoff"/>
+    </wsdl:message>
+    <wsdl:message name="delWriteoffResponse">
+        <wsdl:part name="parameters" element="ns:delWriteoffResponse"/>
+    </wsdl:message>
+    <wsdl:message name="delCabinetRequest">
+        <wsdl:part name="parameters" element="ns:delCabinet"/>
+    </wsdl:message>
+    <wsdl:message name="delCabinetResponse">
+        <wsdl:part name="parameters" element="ns:delCabinetResponse"/>
+    </wsdl:message>
+    <wsdl:message name="editDistributionRequest">
+        <wsdl:part name="parameters" element="ns:editDistribution"/>
+    </wsdl:message>
+    <wsdl:message name="editDistributionResponse">
+        <wsdl:part name="parameters" element="ns:editDistributionResponse"/>
     </wsdl:message>
     <wsdl:message name="addEquipmentRequest">
         <wsdl:part name="parameters" element="ns:addEquipment"/>
@@ -156,17 +370,17 @@
     <wsdl:message name="addEquipmentResponse">
         <wsdl:part name="parameters" element="ns:addEquipmentResponse"/>
     </wsdl:message>
-    <wsdl:message name="getResponsibleRequest">
-        <wsdl:part name="parameters" element="ns:getResponsible"/>
+    <wsdl:message name="editWriteoffRequest">
+        <wsdl:part name="parameters" element="ns:editWriteoff"/>
     </wsdl:message>
-    <wsdl:message name="getResponsibleResponse">
-        <wsdl:part name="parameters" element="ns:getResponsibleResponse"/>
+    <wsdl:message name="editWriteoffResponse">
+        <wsdl:part name="parameters" element="ns:editWriteoffResponse"/>
     </wsdl:message>
-    <wsdl:message name="getMySpechialCodeRequest">
-        <wsdl:part name="parameters" element="ns:getMySpechialCode"/>
+    <wsdl:message name="editCabinetRequest">
+        <wsdl:part name="parameters" element="ns:editCabinet"/>
     </wsdl:message>
-    <wsdl:message name="getMySpechialCodeResponse">
-        <wsdl:part name="parameters" element="ns:getMySpechialCodeResponse"/>
+    <wsdl:message name="editCabinetResponse">
+        <wsdl:part name="parameters" element="ns:editCabinetResponse"/>
     </wsdl:message>
     <wsdl:message name="getWriteoffRequest">
         <wsdl:part name="parameters" element="ns:getWriteoff"/>
@@ -180,26 +394,104 @@
     <wsdl:message name="getEquipmentResponse">
         <wsdl:part name="parameters" element="ns:getEquipmentResponse"/>
     </wsdl:message>
+    <wsdl:message name="addDistributionRequest">
+        <wsdl:part name="parameters" element="ns:addDistribution"/>
+    </wsdl:message>
+    <wsdl:message name="addDistributionResponse">
+        <wsdl:part name="parameters" element="ns:addDistributionResponse"/>
+    </wsdl:message>
+    <wsdl:message name="addWriteoffRequest">
+        <wsdl:part name="parameters" element="ns:addWriteoff"/>
+    </wsdl:message>
+    <wsdl:message name="addWriteoffResponse">
+        <wsdl:part name="parameters" element="ns:addWriteoffResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getCabinetRequest">
+        <wsdl:part name="parameters" element="ns:getCabinet"/>
+    </wsdl:message>
+    <wsdl:message name="getCabinetResponse">
+        <wsdl:part name="parameters" element="ns:getCabinetResponse"/>
+    </wsdl:message>
+    <wsdl:message name="addResponsibleRequest">
+        <wsdl:part name="parameters" element="ns:addResponsible"/>
+    </wsdl:message>
+    <wsdl:message name="addResponsibleResponse">
+        <wsdl:part name="parameters" element="ns:addResponsibleResponse"/>
+    </wsdl:message>
+    <wsdl:message name="addCabinetRequest">
+        <wsdl:part name="parameters" element="ns:addCabinet"/>
+    </wsdl:message>
+    <wsdl:message name="addCabinetResponse">
+        <wsdl:part name="parameters" element="ns:addCabinetResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getResponsibleRequest">
+        <wsdl:part name="parameters" element="ns:getResponsible"/>
+    </wsdl:message>
+    <wsdl:message name="getResponsibleResponse">
+        <wsdl:part name="parameters" element="ns:getResponsibleResponse"/>
+    </wsdl:message>
+    <wsdl:message name="editResponsibleRequest">
+        <wsdl:part name="parameters" element="ns:editResponsible"/>
+    </wsdl:message>
+    <wsdl:message name="editResponsibleResponse">
+        <wsdl:part name="parameters" element="ns:editResponsibleResponse"/>
+    </wsdl:message>
+    <wsdl:message name="delEquipmentRequest">
+        <wsdl:part name="parameters" element="ns:delEquipment"/>
+    </wsdl:message>
+    <wsdl:message name="delEquipmentResponse">
+        <wsdl:part name="parameters" element="ns:delEquipmentResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getMySpechialCodeRequest">
+        <wsdl:part name="parameters" element="ns:getMySpechialCode"/>
+    </wsdl:message>
+    <wsdl:message name="getMySpechialCodeResponse">
+        <wsdl:part name="parameters" element="ns:getMySpechialCodeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="delResponsibleRequest">
+        <wsdl:part name="parameters" element="ns:delResponsible"/>
+    </wsdl:message>
+    <wsdl:message name="delResponsibleResponse">
+        <wsdl:part name="parameters" element="ns:delResponsibleResponse"/>
+    </wsdl:message>
+    <wsdl:message name="delDistributionRequest">
+        <wsdl:part name="parameters" element="ns:delDistribution"/>
+    </wsdl:message>
+    <wsdl:message name="delDistributionResponse">
+        <wsdl:part name="parameters" element="ns:delDistributionResponse"/>
+    </wsdl:message>
     <wsdl:portType name="MySQLServiceEquipmentPortType">
         <wsdl:operation name="getDistribution">
             <wsdl:input message="ns:getDistributionRequest" wsaw:Action="urn:getDistribution"/>
             <wsdl:output message="ns:getDistributionResponse" wsaw:Action="urn:getDistributionResponse"/>
         </wsdl:operation>
-        <wsdl:operation name="getCabinet">
-            <wsdl:input message="ns:getCabinetRequest" wsaw:Action="urn:getCabinet"/>
-            <wsdl:output message="ns:getCabinetResponse" wsaw:Action="urn:getCabinetResponse"/>
+        <wsdl:operation name="editEquipment">
+            <wsdl:input message="ns:editEquipmentRequest" wsaw:Action="urn:editEquipment"/>
+            <wsdl:output message="ns:editEquipmentResponse" wsaw:Action="urn:editEquipmentResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delWriteoff">
+            <wsdl:input message="ns:delWriteoffRequest" wsaw:Action="urn:delWriteoff"/>
+            <wsdl:output message="ns:delWriteoffResponse" wsaw:Action="urn:delWriteoffResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delCabinet">
+            <wsdl:input message="ns:delCabinetRequest" wsaw:Action="urn:delCabinet"/>
+            <wsdl:output message="ns:delCabinetResponse" wsaw:Action="urn:delCabinetResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="editDistribution">
+            <wsdl:input message="ns:editDistributionRequest" wsaw:Action="urn:editDistribution"/>
+            <wsdl:output message="ns:editDistributionResponse" wsaw:Action="urn:editDistributionResponse"/>
         </wsdl:operation>
         <wsdl:operation name="addEquipment">
             <wsdl:input message="ns:addEquipmentRequest" wsaw:Action="urn:addEquipment"/>
             <wsdl:output message="ns:addEquipmentResponse" wsaw:Action="urn:addEquipmentResponse"/>
         </wsdl:operation>
-        <wsdl:operation name="getResponsible">
-            <wsdl:input message="ns:getResponsibleRequest" wsaw:Action="urn:getResponsible"/>
-            <wsdl:output message="ns:getResponsibleResponse" wsaw:Action="urn:getResponsibleResponse"/>
+        <wsdl:operation name="editWriteoff">
+            <wsdl:input message="ns:editWriteoffRequest" wsaw:Action="urn:editWriteoff"/>
+            <wsdl:output message="ns:editWriteoffResponse" wsaw:Action="urn:editWriteoffResponse"/>
         </wsdl:operation>
-        <wsdl:operation name="getMySpechialCode">
-            <wsdl:input message="ns:getMySpechialCodeRequest" wsaw:Action="urn:getMySpechialCode"/>
-            <wsdl:output message="ns:getMySpechialCodeResponse" wsaw:Action="urn:getMySpechialCodeResponse"/>
+        <wsdl:operation name="editCabinet">
+            <wsdl:input message="ns:editCabinetRequest" wsaw:Action="urn:editCabinet"/>
+            <wsdl:output message="ns:editCabinetResponse" wsaw:Action="urn:editCabinetResponse"/>
         </wsdl:operation>
         <wsdl:operation name="getWriteoff">
             <wsdl:input message="ns:getWriteoffRequest" wsaw:Action="urn:getWriteoff"/>
@@ -208,6 +500,50 @@
         <wsdl:operation name="getEquipment">
             <wsdl:input message="ns:getEquipmentRequest" wsaw:Action="urn:getEquipment"/>
             <wsdl:output message="ns:getEquipmentResponse" wsaw:Action="urn:getEquipmentResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addDistribution">
+            <wsdl:input message="ns:addDistributionRequest" wsaw:Action="urn:addDistribution"/>
+            <wsdl:output message="ns:addDistributionResponse" wsaw:Action="urn:addDistributionResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addWriteoff">
+            <wsdl:input message="ns:addWriteoffRequest" wsaw:Action="urn:addWriteoff"/>
+            <wsdl:output message="ns:addWriteoffResponse" wsaw:Action="urn:addWriteoffResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <wsdl:input message="ns:getCabinetRequest" wsaw:Action="urn:getCabinet"/>
+            <wsdl:output message="ns:getCabinetResponse" wsaw:Action="urn:getCabinetResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addResponsible">
+            <wsdl:input message="ns:addResponsibleRequest" wsaw:Action="urn:addResponsible"/>
+            <wsdl:output message="ns:addResponsibleResponse" wsaw:Action="urn:addResponsibleResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="addCabinet">
+            <wsdl:input message="ns:addCabinetRequest" wsaw:Action="urn:addCabinet"/>
+            <wsdl:output message="ns:addCabinetResponse" wsaw:Action="urn:addCabinetResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <wsdl:input message="ns:getResponsibleRequest" wsaw:Action="urn:getResponsible"/>
+            <wsdl:output message="ns:getResponsibleResponse" wsaw:Action="urn:getResponsibleResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="editResponsible">
+            <wsdl:input message="ns:editResponsibleRequest" wsaw:Action="urn:editResponsible"/>
+            <wsdl:output message="ns:editResponsibleResponse" wsaw:Action="urn:editResponsibleResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delEquipment">
+            <wsdl:input message="ns:delEquipmentRequest" wsaw:Action="urn:delEquipment"/>
+            <wsdl:output message="ns:delEquipmentResponse" wsaw:Action="urn:delEquipmentResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <wsdl:input message="ns:getMySpechialCodeRequest" wsaw:Action="urn:getMySpechialCode"/>
+            <wsdl:output message="ns:getMySpechialCodeResponse" wsaw:Action="urn:getMySpechialCodeResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delResponsible">
+            <wsdl:input message="ns:delResponsibleRequest" wsaw:Action="urn:delResponsible"/>
+            <wsdl:output message="ns:delResponsibleResponse" wsaw:Action="urn:delResponsibleResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="delDistribution">
+            <wsdl:input message="ns:delDistributionRequest" wsaw:Action="urn:delDistribution"/>
+            <wsdl:output message="ns:delDistributionResponse" wsaw:Action="urn:delDistributionResponse"/>
         </wsdl:operation>
     </wsdl:portType>
     <wsdl:binding name="MySQLServiceEquipmentSoap11Binding" type="ns:MySQLServiceEquipmentPortType">
@@ -221,8 +557,35 @@
                 <soap:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getCabinet">
-            <soap:operation soapAction="urn:getCabinet" style="document"/>
+        <wsdl:operation name="editEquipment">
+            <soap:operation soapAction="urn:editEquipment" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delWriteoff">
+            <soap:operation soapAction="urn:delWriteoff" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delCabinet">
+            <soap:operation soapAction="urn:delCabinet" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editDistribution">
+            <soap:operation soapAction="urn:editDistribution" style="document"/>
             <wsdl:input>
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -239,8 +602,8 @@
                 <soap:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getResponsible">
-            <soap:operation soapAction="urn:getResponsible" style="document"/>
+        <wsdl:operation name="editWriteoff">
+            <soap:operation soapAction="urn:editWriteoff" style="document"/>
             <wsdl:input>
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -248,8 +611,8 @@
                 <soap:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getMySpechialCode">
-            <soap:operation soapAction="urn:getMySpechialCode" style="document"/>
+        <wsdl:operation name="editCabinet">
+            <soap:operation soapAction="urn:editCabinet" style="document"/>
             <wsdl:input>
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -275,6 +638,105 @@
                 <soap:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
+        <wsdl:operation name="addDistribution">
+            <soap:operation soapAction="urn:addDistribution" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addWriteoff">
+            <soap:operation soapAction="urn:addWriteoff" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <soap:operation soapAction="urn:getCabinet" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addResponsible">
+            <soap:operation soapAction="urn:addResponsible" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addCabinet">
+            <soap:operation soapAction="urn:addCabinet" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <soap:operation soapAction="urn:getResponsible" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editResponsible">
+            <soap:operation soapAction="urn:editResponsible" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delEquipment">
+            <soap:operation soapAction="urn:delEquipment" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <soap:operation soapAction="urn:getMySpechialCode" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delResponsible">
+            <soap:operation soapAction="urn:delResponsible" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delDistribution">
+            <soap:operation soapAction="urn:delDistribution" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
     </wsdl:binding>
     <wsdl:binding name="MySQLServiceEquipmentSoap12Binding" type="ns:MySQLServiceEquipmentPortType">
         <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
@@ -287,8 +749,35 @@
                 <soap12:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getCabinet">
-            <soap12:operation soapAction="urn:getCabinet" style="document"/>
+        <wsdl:operation name="editEquipment">
+            <soap12:operation soapAction="urn:editEquipment" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delWriteoff">
+            <soap12:operation soapAction="urn:delWriteoff" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delCabinet">
+            <soap12:operation soapAction="urn:delCabinet" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editDistribution">
+            <soap12:operation soapAction="urn:editDistribution" style="document"/>
             <wsdl:input>
                 <soap12:body use="literal"/>
             </wsdl:input>
@@ -305,8 +794,8 @@
                 <soap12:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getResponsible">
-            <soap12:operation soapAction="urn:getResponsible" style="document"/>
+        <wsdl:operation name="editWriteoff">
+            <soap12:operation soapAction="urn:editWriteoff" style="document"/>
             <wsdl:input>
                 <soap12:body use="literal"/>
             </wsdl:input>
@@ -314,8 +803,8 @@
                 <soap12:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getMySpechialCode">
-            <soap12:operation soapAction="urn:getMySpechialCode" style="document"/>
+        <wsdl:operation name="editCabinet">
+            <soap12:operation soapAction="urn:editCabinet" style="document"/>
             <wsdl:input>
                 <soap12:body use="literal"/>
             </wsdl:input>
@@ -341,6 +830,105 @@
                 <soap12:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
+        <wsdl:operation name="addDistribution">
+            <soap12:operation soapAction="urn:addDistribution" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addWriteoff">
+            <soap12:operation soapAction="urn:addWriteoff" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <soap12:operation soapAction="urn:getCabinet" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addResponsible">
+            <soap12:operation soapAction="urn:addResponsible" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addCabinet">
+            <soap12:operation soapAction="urn:addCabinet" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <soap12:operation soapAction="urn:getResponsible" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editResponsible">
+            <soap12:operation soapAction="urn:editResponsible" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delEquipment">
+            <soap12:operation soapAction="urn:delEquipment" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <soap12:operation soapAction="urn:getMySpechialCode" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delResponsible">
+            <soap12:operation soapAction="urn:delResponsible" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delDistribution">
+            <soap12:operation soapAction="urn:delDistribution" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
     </wsdl:binding>
     <wsdl:binding name="MySQLServiceEquipmentHttpBinding" type="ns:MySQLServiceEquipmentPortType">
         <http:binding verb="POST"/>
@@ -353,8 +941,35 @@
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getCabinet">
-            <http:operation location="getCabinet"/>
+        <wsdl:operation name="editEquipment">
+            <http:operation location="editEquipment"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delWriteoff">
+            <http:operation location="delWriteoff"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delCabinet">
+            <http:operation location="delCabinet"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editDistribution">
+            <http:operation location="editDistribution"/>
             <wsdl:input>
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:input>
@@ -371,8 +986,8 @@
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getResponsible">
-            <http:operation location="getResponsible"/>
+        <wsdl:operation name="editWriteoff">
+            <http:operation location="editWriteoff"/>
             <wsdl:input>
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:input>
@@ -380,8 +995,8 @@
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:output>
         </wsdl:operation>
-        <wsdl:operation name="getMySpechialCode">
-            <http:operation location="getMySpechialCode"/>
+        <wsdl:operation name="editCabinet">
+            <http:operation location="editCabinet"/>
             <wsdl:input>
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:input>
@@ -400,6 +1015,105 @@
         </wsdl:operation>
         <wsdl:operation name="getEquipment">
             <http:operation location="getEquipment"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addDistribution">
+            <http:operation location="addDistribution"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addWriteoff">
+            <http:operation location="addWriteoff"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCabinet">
+            <http:operation location="getCabinet"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addResponsible">
+            <http:operation location="addResponsible"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addCabinet">
+            <http:operation location="addCabinet"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getResponsible">
+            <http:operation location="getResponsible"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="editResponsible">
+            <http:operation location="editResponsible"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delEquipment">
+            <http:operation location="delEquipment"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMySpechialCode">
+            <http:operation location="getMySpechialCode"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delResponsible">
+            <http:operation location="delResponsible"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="delDistribution">
+            <http:operation location="delDistribution"/>
             <wsdl:input>
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:input>

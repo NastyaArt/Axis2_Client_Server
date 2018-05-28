@@ -6,6 +6,9 @@ public class Cabinet {
     private String name;
     private int codeResponsible;
 
+    public Cabinet(){
+
+    }
     public Cabinet(int code, String name, int codeResponsible) {
         this.code = code;
         this.name = name;

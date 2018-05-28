@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e76663d7-f242-405c-8788-c75e69f8dce7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build/MySQLServiceEquipment.aar" afterPath="$PROJECT_DIR$/build/MySQLServiceEquipment.aar" />
       <change beforePath="$PROJECT_DIR$/build/MySQLServiceEquipment.wsdl" afterPath="$PROJECT_DIR$/build/MySQLServiceEquipment.wsdl" />
       <change beforePath="$PROJECT_DIR$/build/classes/MySQLServiceEquipment.class" afterPath="$PROJECT_DIR$/build/classes/MySQLServiceEquipment.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/models/Cabinet.class" afterPath="$PROJECT_DIR$/build/classes/models/Cabinet.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/models/Distribution.class" afterPath="$PROJECT_DIR$/build/classes/models/Distribution.class" />
       <change beforePath="$PROJECT_DIR$/build/classes/models/Equipment.class" afterPath="$PROJECT_DIR$/build/classes/models/Equipment.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/server/MySQLServiceEquipment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/MySQLServiceEquipment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/models/Cabinet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/models/Distribution.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/models/Equipment.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/models/Responsible.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab3/models/Writeoff.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/models/Responsible.class" afterPath="$PROJECT_DIR$/build/classes/models/Responsible.class" />
+      <change beforePath="$PROJECT_DIR$/build/classes/models/Writeoff.class" afterPath="$PROJECT_DIR$/build/classes/models/Writeoff.class" />
       <change beforePath="$PROJECT_DIR$/src/MySQLServiceEquipment.java" afterPath="$PROJECT_DIR$/src/MySQLServiceEquipment.java" />
+      <change beforePath="$PROJECT_DIR$/src/models/Cabinet.java" afterPath="$PROJECT_DIR$/src/models/Cabinet.java" />
+      <change beforePath="$PROJECT_DIR$/src/models/Distribution.java" afterPath="$PROJECT_DIR$/src/models/Distribution.java" />
       <change beforePath="$PROJECT_DIR$/src/models/Equipment.java" afterPath="$PROJECT_DIR$/src/models/Equipment.java" />
+      <change beforePath="$PROJECT_DIR$/src/models/Responsible.java" afterPath="$PROJECT_DIR$/src/models/Responsible.java" />
+      <change beforePath="$PROJECT_DIR$/src/models/Writeoff.java" afterPath="$PROJECT_DIR$/src/models/Writeoff.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MySQLServiceEquipment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MySQLServiceEquipment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MySQLServiceEquipment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="163" column="27" lean-forward="false" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
+            <state relative-caret-position="-3342">
+              <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#426#427#0" expanded="true" />
@@ -42,26 +42,6 @@
                 <element signature="e#2685#2699#0" expanded="true" />
                 <element signature="e#3477#3487#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/Equipment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -91,10 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/models/Cabinet.java" />
-        <option value="$PROJECT_DIR$/src/models/Distribution.java" />
-        <option value="$PROJECT_DIR$/src/models/Responsible.java" />
-        <option value="$PROJECT_DIR$/src/models/Writeoff.java" />
         <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" />
         <option value="$PROJECT_DIR$/src/client/CabinetEdit.fxml" />
         <option value="$PROJECT_DIR$/src/client/DistributionEdit.fxml" />
@@ -114,8 +90,12 @@
         <option value="$PROJECT_DIR$/../Lab3_example/build.xml" />
         <option value="$PROJECT_DIR$/resources/META-INF/services.xml" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/MySQLServiceEquipment.java" />
+        <option value="$PROJECT_DIR$/src/models/Cabinet.java" />
+        <option value="$PROJECT_DIR$/src/models/Distribution.java" />
         <option value="$PROJECT_DIR$/src/models/Equipment.java" />
+        <option value="$PROJECT_DIR$/src/models/Responsible.java" />
+        <option value="$PROJECT_DIR$/src/models/Writeoff.java" />
+        <option value="$PROJECT_DIR$/src/MySQLServiceEquipment.java" />
       </list>
     </option>
   </component>
@@ -323,6 +303,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -524,77 +505,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Lab3/server/MySQLServiceEquipment.class" />
-    <entry file="file://$PROJECT_DIR$/src/models/Responsible.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#289#290#0" expanded="false" />
-            <element signature="e#316#317#0" expanded="false" />
-            <element signature="e#353#354#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="e#415#416#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-            <element signature="e#541#542#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Distribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="96" lean-forward="false" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
-          <folding>
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#500#501#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#638#639#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1080#1081#0" expanded="false" />
-            <element signature="e#1107#1108#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1179#1180#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Cabinet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="e#319#320#0" expanded="false" />
-            <element signature="e#346#347#0" expanded="false" />
-            <element signature="e#383#384#0" expanded="false" />
-            <element signature="e#415#416#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#584#585#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/CabinetEdit.fxml" />
     <entry file="file://$PROJECT_DIR$/src/client/DistributionEdit.fxml" />
     <entry file="file://$PROJECT_DIR$/src/client/EquipmentEdit.fxml" />
@@ -631,14 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
           <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Writeoff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="106" lean-forward="false" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
           <folding />
         </state>
       </provider>
@@ -683,10 +585,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Cabinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Distribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Responsible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Writeoff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MySQLServiceEquipment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="163" column="27" lean-forward="false" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
+        <state relative-caret-position="-3342">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#426#427#0" expanded="true" />
@@ -697,14 +639,6 @@
             <element signature="e#2685#2699#0" expanded="true" />
             <element signature="e#3477#3487#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -10,6 +10,7 @@ public class Equipment {
     private String receiptDate;
 
     public Equipment() {
+
     }
 
     public Equipment(int code, String category, String name, int cost, String producer, String receiptDate) {

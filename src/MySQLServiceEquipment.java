@@ -151,235 +151,304 @@ public class MySQLServiceEquipment {
             query.append("', '");
             query.append(equipment.getReceiptDate());
             query.append("');");
-//        String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n".concat(" VALUES (".concat(Integer.toString(equipment.getCode())).concat(", '").concat(equipment.getCategory()).concat("', '").concate(quipment.getName()).concate("', ").concate(Integer.toString(equipment.getCost())).concate(", '").concate(equipment.getProducer()).concate("', '").concate(equipment.getReceiptDate()).concate("');"));
-//            String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n" +
-//                    " VALUES (" + equipment.getCode() + ", '" +
-//                    equipment.getCategory() + "', '" +
-//                    equipment.getName() + "', " +
-//                    equipment.getCost() + ", '" +
-//                    equipment.getProducer() + "', '" +
-//                    equipment.getReceiptDate() +
-//                    "');";
+
             sendRequest(query.toString());
             return "Success";
         }
-/*
-        public void addCabinet(Cabinet cabinet){
-            String query = "INSERT INTO cabinet (code, name, codeResponsible)\n" +
-                    " VALUES (" + cabinet.getCode() + ", '" +
-                    cabinet.getName() + "', " +
-                    cabinet.getCodeResponsible() +
-                    ");";
-            sendRequest(query);
+
+        public String addCabinet(Cabinet cabinet){
+            StringBuilder query = new StringBuilder("INSERT INTO cabinet (code, name, codeResponsible)\n");
+            query.append(" VALUES (");
+            query.append(cabinet.getCode());
+            query.append(", '");
+            query.append(cabinet.getName());
+            query.append("', ");
+            query.append(cabinet.getCodeResponsible());
+            query.append(");");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void addResponsible(Responsible responsible){
-            String query = "INSERT INTO responsible (code, fio, phone)\n" +
-                    " VALUES (" + responsible.getCode() + ", '" +
-                    responsible.getFio() + "', '" +
-                    responsible.getPhone() +
-                    "');";
-            sendRequest(query);
+        public String addResponsible(Responsible responsible){
+            StringBuilder query = new StringBuilder("INSERT INTO responsible (code, fio, phone)\n");
+            query.append(" VALUES (");
+            query.append(responsible.getCode());
+            query.append(", '");
+            query.append(responsible.getFio());
+            query.append("', '");
+            query.append(responsible.getPhone());
+            query.append("');");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void addDistribution(Distribution distribution){
-            String query = "INSERT INTO distribution (code, codeCabinet, codeEquipment, number, date)\n" +
-                    " VALUES (" + distribution.getCode() + ", " +
-                    distribution.getCodeCabinet() + ", " +
-                    distribution.getCodeEquipment() + ", " +
-                    distribution.getNumber() + ", '" +
-                    distribution.getDate() +
-                    "');";
-            sendRequest(query);
+        public String addDistribution(Distribution distribution){
+            StringBuilder query = new StringBuilder("INSERT INTO distribution (code, codeCabinet, codeEquipment, number, date)\n");
+            query.append(" VALUES (");
+            query.append(distribution.getCode());
+            query.append(", ");
+            query.append(distribution.getCodeCabinet());
+            query.append(", ");
+            query.append(distribution.getCodeEquipment());
+            query.append(", ");
+            query.append(distribution.getNumber());
+            query.append(", '");
+            query.append(distribution.getDate());
+            query.append("');");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void addWriteoff(Writeoff writeoff){
-            String query = "INSERT INTO writeoff (code, codeCabinet, codeEquipment, number, date, cause)\n" +
-                    " VALUES (" + writeoff.getCode() + ", " +
-                    writeoff.getCodeCabinet() + ", " +
-                    writeoff.getCodeEquipment() + ", " +
-                    writeoff.getNumber() + ", '" +
-                    writeoff.getDate() + "', '" +
-                    writeoff.getCause() +
-                    "');";
-            sendRequest(query);
+        public String addWriteoff(Writeoff writeoff){
+            StringBuilder query = new StringBuilder("INSERT INTO writeoff (code, codeCabinet, codeEquipment, number, date, cause)\n");
+            query.append(" VALUES (");
+            query.append(writeoff.getCode());
+            query.append(", ");
+            query.append(writeoff.getCodeCabinet());
+            query.append(", ");
+            query.append(writeoff.getCodeEquipment());
+            query.append(", ");
+            query.append(writeoff.getNumber());
+            query.append(", '");
+            query.append(writeoff.getDate());
+            query.append("', '");
+            query.append(writeoff.getCause());
+            query.append("');");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void delEquipment(int code){
-            String query = "delete from equipment where code = " + code + ";";
-            sendRequest(query);
+        public String delEquipment(int code){
+            StringBuilder query = new StringBuilder("delete from equipment where code = ");
+            query.append(code);
+            query.append(";");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void delCabinet(int code){
-            String query = "delete from cabinet where code = " + code + ";";
-            sendRequest(query);
+        public String delCabinet(int code){
+            StringBuilder query = new StringBuilder("delete from cabinet where code = ");
+            query.append(code);
+            query.append(";");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void delResponsible(int code){
-            String query = "delete from responsible where code = " + code + ";";
-            sendRequest(query);
+        public String delResponsible(int code){
+            StringBuilder query = new StringBuilder("delete from responsible where code = ");
+            query.append(code);
+            query.append(";");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void delDistribution(int code){
-            String query = "delete from distribution where code = " + code + ";";
-            sendRequest(query);
+        public String delDistribution(int code){
+            StringBuilder query = new StringBuilder("delete from distribution where code = ");
+            query.append(code);
+            query.append(";");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void delWriteoff(int code){
-            String query = "delete from writeoff where code = " + code + ";";
-            sendRequest(query);
+        public String delWriteoff(int code){
+            StringBuilder query = new StringBuilder("delete from writeoff where code = ");
+            query.append(code);
+            query.append(";");
+            sendRequest(query.toString());
+            return "Success";
         }
 
-        public void editEquipment(Equipment equipment){
+        public String editEquipment(Equipment equipment){
             if (equipment.getCode() < 0)
-                return;
+                return "Error";
 
             if (!equipment.getCategory().isEmpty()) {
-                String query = "update equipment set category = '" +
-                        equipment.getCategory() + "' where code = " +
-                        equipment.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update equipment set category = '");
+                query.append(equipment.getCategory());
+                query.append("' where code = ");
+                query.append(equipment.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (!equipment.getName().isEmpty()) {
-                String query = "update equipment set name = '" +
-                        equipment.getName() + "' where code = " +
-                        equipment.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update equipment set name = '");
+                query.append(equipment.getName());
+                query.append("' where code = ");
+                query.append(equipment.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (equipment.getCost() > 0) {
-                String query = "update equipment set cost = '" +
-                        equipment.getCost() + "' where code = " +
-                        equipment.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update equipment set cost = '");
+                query.append(equipment.getCost());
+                query.append("' where code = ");
+                query.append(equipment.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (!equipment.getProducer().isEmpty()) {
-                String query = "update equipment set producer = '" +
-                        equipment.getProducer() + "' where code = " +
-                        equipment.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update equipment set producer = '");
+                query.append(equipment.getProducer());
+                query.append("' where code = ");
+                query.append(equipment.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (!equipment.getReceiptDate().isEmpty()) {
-                String query = "update equipment set receiptDate = '" +
-                        equipment.getReceiptDate() + "' where code = " +
-                        equipment.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update equipment set receiptDate = '");
+                query.append(equipment.getReceiptDate());
+                query.append("' where code = ");
+                query.append(equipment.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
+            return "Success";
         }
 
-        public void editCabinet(Cabinet cabinet){
+        public String editCabinet(Cabinet cabinet){
             if (cabinet.getCode() < 0)
-                return;
+                return "Error";
 
             if (!cabinet.getName().isEmpty()) {
-                String query = "update cabinet set name = '" +
-                        cabinet.getName() + "' where code = " +
-                        cabinet.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update cabinet set name = '");
+                query.append(cabinet.getName());
+                query.append("' where code = ");
+                query.append(cabinet.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (cabinet.getCodeResponsible() > 0) {
-                String query = "update cabinet set codeResponsible = '" +
-                        cabinet.getCodeResponsible() + "' where code = " +
-                        cabinet.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update cabinet set codeResponsible = '");
+                query.append(cabinet.getCodeResponsible());
+                query.append("' where code = ");
+                query.append(cabinet.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
+            return "Success";
         }
 
-        public void editResponsible(Responsible responsible){
+        public String editResponsible(Responsible responsible){
             if (responsible.getCode() < 0)
-                return;
+                return "Error";
 
             if (!responsible.getFio().isEmpty()) {
-                String query = "update responsible set fio = '" +
-                        responsible.getFio() + "' where code = " +
-                        responsible.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update responsible set fio = '");
+                query.append(responsible.getFio());
+                query.append("' where code = ");
+                query.append(responsible.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (!responsible.getPhone().isEmpty()) {
-                String query = "update responsible set phone = '" +
-                        responsible.getPhone() + "' where code = " +
-                        responsible.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update responsible set phone = '");
+                query.append(responsible.getPhone());
+                query.append("' where code = ");
+                query.append(responsible.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
+            return "Success";
         }
 
-        public void editDistribution(Distribution distribution){
+        public String editDistribution(Distribution distribution){
             if (distribution.getCode() < 0)
-                return;
+                return "Error";
 
             if (distribution.getCodeCabinet() > 0) {
-                String query = "update distribution set codeCabinet = '" +
-                        distribution.getCodeCabinet() + "' where code = " +
-                        distribution.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update distribution set codeCabinet = '");
+                query.append(distribution.getCodeCabinet());
+                query.append("' where code = ");
+                query.append(distribution.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (distribution.getCodeEquipment() > 0) {
-                String query = "update distribution set codeEquipment = '" +
-                        distribution.getCodeEquipment() + "' where code = " +
-                        distribution.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update distribution set codeEquipment = '");
+                query.append(distribution.getCodeEquipment());
+                query.append("' where code = ");
+                query.append(distribution.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (distribution.getNumber() > 0) {
-                String query = "update distribution set number = '" +
-                        distribution.getNumber() + "' where code = " +
-                        distribution.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update distribution set number = '");
+                query.append(distribution.getNumber());
+                query.append("' where code = ");
+                query.append(distribution.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
 
             if (!distribution.getDate().isEmpty()) {
-                String query = "update distribution set date = '" +
-                        distribution.getDate() + "' where code = " +
-                        distribution.getCode() + ";";
-                sendRequest(query);
+                StringBuilder query = new StringBuilder("update distribution set date = '");
+                query.append(distribution.getDate());
+                query.append("' where code = ");
+                query.append(distribution.getCode());
+                query.append(";");
+                sendRequest(query.toString());
             }
+            return "Success";
         }
-*/
-//        public void editWriteoff(Writeoff writeoff){
-//            if (writeoff.getCode() < 0)
-//                return;
-//
-//            if (writeoff.getCodeCabinet() > 0) {
-//                String query = "update writeoff set codeCabinet = '" +
-//                        writeoff.getCodeCabinet() + "' where code = " +
-//                        writeoff.getCode() + ";";
-//                sendRequest(query);
-//            }
-//
-//            if (writeoff.getCodeEquipment() > 0) {
-//                String query = "update writeoff set codeEquipment = '" +
-//                        writeoff.getCodeEquipment() + "' where code = " +
-//                        writeoff.getCode() + ";";
-//                sendRequest(query);
-//            }
-//
-//            if (writeoff.getNumber() > 0) {
-//                String query = "update writeoff set number = '" +
-//                        writeoff.getNumber() + "' where code = " +
-//                        writeoff.getCode() + ";";
-//                sendRequest(query);
-//            }
-//
-//            if (!writeoff.getDate().isEmpty()) {
-//                String query = "update writeoff set date = '" +
-//                        writeoff.getDate() + "' where code = " +
-//                        writeoff.getCode() + ";";
-//                sendRequest(query);
-//            }
-//
-//            if (!writeoff.getCause().isEmpty()) {
-//                String query = "update writeoff set cause = '" +
-//                        writeoff.getCause() + "' where code = " +
-//                        writeoff.getCode() + ";";
-//                sendRequest(query);
-//            }
-//        }
+
+        public String editWriteoff(Writeoff writeoff){
+            if (writeoff.getCode() < 0)
+                return "Error";
+
+            if (writeoff.getCodeCabinet() > 0) {
+                StringBuilder query = new StringBuilder("update writeoff set codeCabinet = '");
+                query.append(writeoff.getCodeCabinet());
+                query.append("' where code = ");
+                query.append(writeoff.getCode());
+                query.append(";");
+                sendRequest(query.toString());
+            }
+
+            if (writeoff.getCodeEquipment() > 0) {
+                StringBuilder query = new StringBuilder("update writeoff set codeEquipment = '");
+                query.append(writeoff.getCodeEquipment());
+                query.append("' where code = ");
+                query.append(writeoff.getCode());
+                query.append(";");
+                sendRequest(query.toString());
+            }
+
+            if (writeoff.getNumber() > 0) {
+                StringBuilder query = new StringBuilder("update writeoff set number = '");
+                query.append(writeoff.getNumber());
+                query.append("' where code = ");
+                query.append(writeoff.getCode());
+                query.append(";");
+                sendRequest(query.toString());
+            }
+
+            if (!writeoff.getDate().isEmpty()) {
+                StringBuilder query = new StringBuilder("update writeoff set date = '");
+                query.append(writeoff.getDate());
+                query.append("' where code = ");
+                query.append(writeoff.getCode());
+                query.append(";");
+                sendRequest(query.toString());
+            }
+
+            if (!writeoff.getCause().isEmpty()) {
+                StringBuilder query = new StringBuilder("update writeoff set cause = '");
+                query.append(writeoff.getCause());
+                query.append("' where code = ");
+                query.append(writeoff.getCode());
+                query.append(";");
+                sendRequest(query.toString());
+            }
+            return "Success";
+        }
 
     private void sendSelectRequest(String query) {
 

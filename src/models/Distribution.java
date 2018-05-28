@@ -8,6 +8,9 @@ public class Distribution {
     private int number;
     private String date;
 
+    public Distribution(){
+
+    }
     public Distribution(int code, int codeCabinet, int codeEquipment, int number, String date) {
         this.code = code;
         this.codeCabinet = codeCabinet;
