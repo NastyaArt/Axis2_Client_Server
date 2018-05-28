@@ -29,7 +29,9 @@
             </xs:element>
             <xs:element name="getMySpechialCode">
                 <xs:complexType>
-                    <xs:sequence/>
+                    <xs:sequence>
+                        <xs:element name="b" type="xs:int"/>
+                    </xs:sequence>
                 </xs:complexType>
             </xs:element>
             <xs:element name="getMySpechialCodeResponse">
@@ -72,6 +74,20 @@
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element maxOccurs="unbounded" minOccurs="0" name="return" nillable="true" type="ax22:Cabinet"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addEquipment">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="equipment" nillable="true" type="ax22:Equipment"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addEquipmentResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
@@ -134,6 +150,12 @@
     <wsdl:message name="getCabinetResponse">
         <wsdl:part name="parameters" element="ns:getCabinetResponse"/>
     </wsdl:message>
+    <wsdl:message name="addEquipmentRequest">
+        <wsdl:part name="parameters" element="ns:addEquipment"/>
+    </wsdl:message>
+    <wsdl:message name="addEquipmentResponse">
+        <wsdl:part name="parameters" element="ns:addEquipmentResponse"/>
+    </wsdl:message>
     <wsdl:message name="getResponsibleRequest">
         <wsdl:part name="parameters" element="ns:getResponsible"/>
     </wsdl:message>
@@ -167,6 +189,10 @@
             <wsdl:input message="ns:getCabinetRequest" wsaw:Action="urn:getCabinet"/>
             <wsdl:output message="ns:getCabinetResponse" wsaw:Action="urn:getCabinetResponse"/>
         </wsdl:operation>
+        <wsdl:operation name="addEquipment">
+            <wsdl:input message="ns:addEquipmentRequest" wsaw:Action="urn:addEquipment"/>
+            <wsdl:output message="ns:addEquipmentResponse" wsaw:Action="urn:addEquipmentResponse"/>
+        </wsdl:operation>
         <wsdl:operation name="getResponsible">
             <wsdl:input message="ns:getResponsibleRequest" wsaw:Action="urn:getResponsible"/>
             <wsdl:output message="ns:getResponsibleResponse" wsaw:Action="urn:getResponsibleResponse"/>
@@ -197,6 +223,15 @@
         </wsdl:operation>
         <wsdl:operation name="getCabinet">
             <soap:operation soapAction="urn:getCabinet" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addEquipment">
+            <soap:operation soapAction="urn:addEquipment" style="document"/>
             <wsdl:input>
                 <soap:body use="literal"/>
             </wsdl:input>
@@ -261,6 +296,15 @@
                 <soap12:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>
+        <wsdl:operation name="addEquipment">
+            <soap12:operation soapAction="urn:addEquipment" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
         <wsdl:operation name="getResponsible">
             <soap12:operation soapAction="urn:getResponsible" style="document"/>
             <wsdl:input>
@@ -311,6 +355,15 @@
         </wsdl:operation>
         <wsdl:operation name="getCabinet">
             <http:operation location="getCabinet"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addEquipment">
+            <http:operation location="addEquipment"/>
             <wsdl:input>
                 <mime:content type="application/xml" part="parameters"/>
             </wsdl:input>

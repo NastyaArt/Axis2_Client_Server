@@ -9,6 +9,9 @@ public class Equipment {
     private String producer;
     private String receiptDate;
 
+    public Equipment() {
+    }
+
     public Equipment(int code, String category, String name, int cost, String producer, String receiptDate) {
         this.code = code;
         this.category = category;

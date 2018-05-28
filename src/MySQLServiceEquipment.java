@@ -14,8 +14,8 @@ public class MySQLServiceEquipment {
     private Statement stmt;
     private ResultSet rs;
 
-    public int getMySpechialCode() {
-        return 911;
+    public int getMySpechialCode(int b) {
+        return 911+b;
     }
 
     public List<Equipment> getEquipment() {
@@ -135,19 +135,35 @@ public class MySQLServiceEquipment {
         }
         return list;
     }
-/*
-        public void addEquipment(Equipment equipment){
-            String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n" +
-                    " VALUES (" + equipment.getCode() + ", '" +
-                    equipment.getCategory() + "', '" +
-                    equipment.getName() + "', " +
-                    equipment.getCost() + ", '" +
-                    equipment.getProducer() + "', '" +
-                    equipment.getReceiptDate() +
-                    "');";
-            sendRequest(query);
-        }
 
+        public String addEquipment(Equipment equipment){
+            StringBuilder query = new StringBuilder("INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n");
+            query.append(" VALUES (");
+            query.append(equipment.getCode());
+            query.append(", '");
+            query.append(equipment.getCategory());
+            query.append("', '");
+            query.append(equipment.getName());
+            query.append("', ");
+            query.append(equipment.getCost());
+            query.append( ", '" );
+            query.append(equipment.getProducer());
+            query.append("', '");
+            query.append(equipment.getReceiptDate());
+            query.append("');");
+//        String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n".concat(" VALUES (".concat(Integer.toString(equipment.getCode())).concat(", '").concat(equipment.getCategory()).concat("', '").concate(quipment.getName()).concate("', ").concate(Integer.toString(equipment.getCost())).concate(", '").concate(equipment.getProducer()).concate("', '").concate(equipment.getReceiptDate()).concate("');"));
+//            String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n" +
+//                    " VALUES (" + equipment.getCode() + ", '" +
+//                    equipment.getCategory() + "', '" +
+//                    equipment.getName() + "', " +
+//                    equipment.getCost() + ", '" +
+//                    equipment.getProducer() + "', '" +
+//                    equipment.getReceiptDate() +
+//                    "');";
+            sendRequest(query.toString());
+            return "Success";
+        }
+/*
         public void addCabinet(Cabinet cabinet){
             String query = "INSERT INTO cabinet (code, name, codeResponsible)\n" +
                     " VALUES (" + cabinet.getCode() + ", '" +
@@ -383,13 +399,17 @@ public class MySQLServiceEquipment {
 
     private void sendRequest(String query){
             try {
+                Class.forName("com.mysql.jdbc.Driver");
                 con = DriverManager.getConnection(url, user, password);
                 stmt = con.createStatement();
                 stmt.executeUpdate(query);
 
             } catch (SQLException sqlEx) {
                 sqlEx.printStackTrace();
-            } finally {
+            }
+            catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }finally {
                 closeConnection();
             }
 
